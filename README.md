@@ -21,7 +21,7 @@ If you don't have ```curl``` you must install it: ```sudo apt install curl```
 3. Verify that the installation was successful by running ```tns``` in your terminal. You should see a long list of commands for ```tns```.
 
 ### Now the 'fun' part begins.
-Set up android development environment, by modifing steps from this guide: https://docs.nativescript.org/angular/start/ns-setup-linux
+Set up android development environment, by modifying steps from this guide: https://docs.nativescript.org/angular/start/ns-setup-linux
 1. ```sudo apt-get install lib32z1 lib32ncurses6 libbz2-1.0:i386 libstdc++6:i386```
 2. ```sudo apt-get install g++```
 3. ```sudo apt-get install openjdk-8-jdk```
