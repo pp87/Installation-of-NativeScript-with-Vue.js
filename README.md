@@ -29,8 +29,11 @@ Set up android development environment, by modifing steps from this guide: https
 
 So far things are nearly the same as in the main guide. Difference starts when you need to set up environment variables and android sdk.
 Solution how to get things work, found here: https://stackoverflow.com/questions/60440509/android-command-line-tools-sdkmanager-always-shows-warning-could-not-create-se/61150826#61150826
-1. Go to **Command line tools only** on https://developer.android.com/studio#Other and download **commandlinetools-linux-6514223_latest.zip**.
-1. Install android-sdk ```sudo apt install android-sdk```
-2. Go to the folder you have saved the **commandlinetools-linux-6514223_latest.zip** file and unzip it
+1. Go to **Command line tools only** on https://developer.android.com/studio#Other and download **commandlinetools-linux-6514223_latest.zip**. File version can be different than this one at the moment of your installation.
+2. Install android-sdk ```sudo apt install android-sdk```
+3. Go to the folder you have saved the **commandlinetools-linux-6514223_latest.zip** file and unzip it
+
 ```sudo mkdir /usr/lib/android-sdk/cmdline-tools``` this folder will keep all required files
+
 ```sudo unzip ./commandlinetools-linux-6514223_latest.zip -d /usr/lib/android-sdk/cmdline-tools```
+
