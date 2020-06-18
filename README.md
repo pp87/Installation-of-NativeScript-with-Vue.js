@@ -37,7 +37,7 @@ Solution how to get things work, found here: https://stackoverflow.com/questions
 
 ```sudo unzip ./commandlinetools-linux-6514223_latest.zip -d /usr/lib/android-sdk/cmdline-tools```
 
-4. ```cd /usr/lib/android-sdk/cmdline-tools/tools/bin$```
+4. ```cd /usr/lib/android-sdk/cmdline-tools/tools/bin```
 5. ```sudo ./sdkmanager "tools" "emulator" "platform-tools" "platforms;android-28" "build-tools;28.0.3" "extras;android;m2repository" "extras;google;m2repository"```
 6. When everything is done correctly set variables in ```.bashrc``` like this:
 ```sudo nano ~/.bashrc```
