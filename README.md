@@ -77,6 +77,7 @@ Solution found here: http://umaranis.com/2019/06/13/setup-android-development-en
 This VM will emulate android device.
 
 ### To start development run both machines at the same time and connect them
-Create project like in this guide: https://nativescript-vue.org/en/docs/getting-started/quick-start/
-and run it by ```tns run```
-Your 'Hello World!' app should appear in the Androids VM.
+Create project like in this guide: https://nativescript-vue.org/en/docs/getting-started/quick-start/ and run it with:
+```tns run```
+
+Your 'Hello World!' app should appear in the Android's VM.
