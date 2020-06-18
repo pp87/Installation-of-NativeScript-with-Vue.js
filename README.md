@@ -73,5 +73,5 @@ No issues were detected.
 ```
 
 ## Now you need to create virtual machine to emulate androis device and connect it with your development machine
-Solution found here: umaranis.com/2019/06/13/setup-android-development-environment-on-virtualbox-vm/
+Solution found here: http://umaranis.com/2019/06/13/setup-android-development-environment-on-virtualbox-vm/
 
