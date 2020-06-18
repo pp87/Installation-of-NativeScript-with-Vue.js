@@ -72,6 +72,11 @@ No issues were detected.
 ✔ Component nativescript has 6.7.4 version and is up to date.
 ```
 
-## Now you need to create virtual machine to emulate androis device and connect it with your development machine
+## Now you need to create virtual machine to emulate Android device and connect it with your development machine
 Solution found here: http://umaranis.com/2019/06/13/setup-android-development-environment-on-virtualbox-vm/
+This VM will emulate android device.
 
+### To start development run both machines at the same time and connect them
+Create project like in this guide: https://nativescript-vue.org/en/docs/getting-started/quick-start/
+and run it by ```tns run```
+Your 'Hello World!' app should appear in the Androids VM.
