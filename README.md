@@ -37,3 +37,41 @@ Solution how to get things work, found here: https://stackoverflow.com/questions
 
 ```sudo unzip ./commandlinetools-linux-6514223_latest.zip -d /usr/lib/android-sdk/cmdline-tools```
 
+4. ```cd /usr/lib/android-sdk/cmdline-tools/tools/bin$```
+5. ```sudo ./sdkmanager "tools" "emulator" "platform-tools" "platforms;android-28" "build-tools;28.0.3" "extras;android;m2repository" "extras;google;m2repository"```
+6. When everything is done correctly set variables in ```.bashrc``` like this:
+```sudo nano ~/.bashrc```
+copy and paste the below:
+```
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+export ANDROID_HOME="/usr/lib/android-sdk/"
+export PATH="${PATH}:${ANDROID_HOME}tools/:${ANDROID_HOME}platform-tools/"
+export ANDROID_SDK_ROOT=/usr/lib/android-sdk
+export PATH="$PATH:$JAVA_HOME"
+export ANDROID_AVD_HOME=/usr/lib/android-sdk/.android/avd
+```
+7. You can make yourself links to ```sdkmanager``` and ```avdmanager``` like so:
+```
+sudo ln -s /usr/lib/android-sdk/tools/bin/sdkmanager /usr/local/bin
+sudo ln -s /usr/lib/android-sdk/tools/bin/avdmanager /usr/local/bin
+```
+8. Reboot the machine.
+9. Run ```tns doctor```, it should show somethign like this with success ticks:
+```
+✔ Getting environment information 
+
+No issues were detected.
+✔ Your ANDROID_HOME environment variable is set and points to correct directory.
+✔ Your adb from the Android SDK is correctly installed.
+✔ The Android SDK is installed.
+✔ A compatible Android SDK for compilation is found.
+✔ Javac is installed and is configured properly.
+✔ The Java Development Kit (JDK) is installed and is configured properly.
+✔ Local builds for iOS can be executed only on a macOS system. To build for iOS on a different operating system, you can use the NativeScript cloud infrastructure.
+✔ Getting NativeScript components versions information...
+✔ Component nativescript has 6.7.4 version and is up to date.
+```
+
+## Now you need to create virtual machine to emulate androis device and connect it with your development machine
+Solution found here: umaranis.com/2019/06/13/setup-android-development-environment-on-virtualbox-vm/
+
